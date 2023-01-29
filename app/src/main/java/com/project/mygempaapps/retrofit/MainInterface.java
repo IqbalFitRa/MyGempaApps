@@ -9,14 +9,14 @@ import retrofit2.http.Path;
 
 public interface MainInterface {
 
-    @GET("summary/2.5_day")
+    @GET("feed/v1.0/summary/2.5_day.geojson")
     Call<ListGempaResponse> listGempa (
 
     );
 
-    @GET("/detail/{id_gempa}")
+    @GET("feed/v1.0/detail/{id_gempa}.geojson")
     Call<DetailGempaResponse> detailGempa (
-            @Path("id_gempa") int id
+            @Path("id_gempa") String id
     );
 
 }

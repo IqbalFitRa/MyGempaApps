@@ -9,7 +9,7 @@ public class RetClient {
     public static MainInterface getService() {
 
         if (service == null) {
-            String API_BASE_URL = "https://earthquake.usgs.gov/earthquakes/feed/v1.0";
+            String API_BASE_URL = "https://earthquake.usgs.gov/earthquakes/";
 
             OkHttpClient.Builder httpClient = new OkHttpClient.Builder();
             Retrofit.Builder builder = new Retrofit.Builder().baseUrl(API_BASE_URL).addConverterFactory(GsonConverterFactory.create());

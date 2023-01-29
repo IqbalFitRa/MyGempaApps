@@ -38,7 +38,7 @@ public class Properties{
     private int tsunami;
 
     @SerializedName("mag")
-    private int mag;
+    private String mag;
 
     @SerializedName("alert")
     private Object alert;
@@ -71,7 +71,7 @@ public class Properties{
     private String ids;
 
     @SerializedName("time")
-    private long time;
+    private String time;
 
     @SerializedName("detail")
     private String detail;
@@ -170,11 +170,11 @@ public class Properties{
         return tsunami;
     }
 
-    public void setMag(int mag){
+    public void setMag(String mag){
         this.mag = mag;
     }
 
-    public int getMag(){
+    public String getMag(){
         return mag;
     }
 
@@ -258,11 +258,11 @@ public class Properties{
         return ids;
     }
 
-    public void setTime(long time){
+    public void setTime(String time){
         this.time = time;
     }
 
-    public long getTime(){
+    public String getTime(){
         return time;
     }
 

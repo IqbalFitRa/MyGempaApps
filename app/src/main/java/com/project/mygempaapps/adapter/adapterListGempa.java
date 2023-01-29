@@ -23,7 +23,7 @@ public class adapterListGempa extends RecyclerView.Adapter<adapterListGempa.Gemp
     }
     ItemGempaClickListener listenerGMP;
 
-    public void setListMahasiswa(ArrayList<FeaturesItem> listGempa) {
+    public void setListGempa(ArrayList<FeaturesItem> listGempa) {
         this.listGempa = listGempa;
         notifyDataSetChanged();
     }
@@ -46,7 +46,7 @@ public class adapterListGempa extends RecyclerView.Adapter<adapterListGempa.Gemp
 
         FeaturesItem gempa = listGempa.get(position);
         holder.lokasigempa.setText(gempa.getProperties().getPlace());
-        holder.waktugempa.setText((int) gempa.getProperties().getTime());
+        holder.waktugempa.setText(gempa.getProperties().getTime());
         holder.skalagempa.setText(gempa.getProperties().getMag());
 
 //        holder..setOnClickListener(new View.OnClickListener() {
