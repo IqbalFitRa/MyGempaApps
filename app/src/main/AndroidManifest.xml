@@ -12,14 +12,11 @@
         android:theme="@style/Theme.MyGempaApps"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:name=".DetailGempaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListGempaActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
